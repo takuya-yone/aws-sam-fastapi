@@ -6,12 +6,12 @@ app = FastAPI(
               )
 
 @app.on_event("startup")
-async def startup_event():
+def startup_event():
     # print("startup_event")
     return None
 
 @app.on_event("shutdown")
-async def shutdown_event():
+def shutdown_event():
     # print("shutdown_event")
     return None
 
